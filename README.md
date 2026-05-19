@@ -46,7 +46,7 @@ explicitly dropped before any modeling.
 
 ### 3.2 Cleaning & feature engineering
 
-- Parsed `term` ("36 months" -> 36) and `emp_length` to numeric
+- Parsed `term` ("36 months" → 36) and `emp_length` to numeric
 - Dropped 57 columns with >40% missing values (mostly empty
   `hardship_*` and secondary-applicant fields)
 - Median imputation for numeric features, mode for categoricals
@@ -72,9 +72,9 @@ All models used class-imbalance handling (`class_weight='balanced'` /
 
 At the default decision threshold, on the defaulting class:
 
-- **Recall ~ 0.67** — the model catches roughly two-thirds of actual
+- **Recall ≈ 0.67** — the model catches roughly two-thirds of actual
   defaulters
-- **Precision ~ 0.32** — among loans flagged risky, about a third truly
+- **Precision ≈ 0.32** — among loans flagged risky, about a third truly
   default
 
 This precision/recall trade-off is deliberate. For a lender, a missed
@@ -114,6 +114,8 @@ Python · pandas · scikit-learn · XGBoost · imbalanced-learn ·
 matplotlib/seaborn · Jupyter · Streamlit · joblib · Git/GitHub
 
 ## Project structure
+
+```
 credit-risk/
 ├── data/raw/         # Lending Club CSV (gitignored — never committed)
 ├── notebooks/        # 01_eda.ipynb — full analysis narrative
@@ -123,6 +125,7 @@ credit-risk/
 ├── reports/figures/  # EDA, ROC, confusion-matrix charts
 ├── requirements.txt  # pinned dependencies (reproducible)
 └── README.md
+```
 
 ## Setup
 
