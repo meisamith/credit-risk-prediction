@@ -29,3 +29,4 @@ kaggle.json
 .DS_Store
 .vscode/
 .idea/
+!models/credit_risk_model.joblib
