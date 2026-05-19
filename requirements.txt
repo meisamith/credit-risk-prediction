@@ -1,0 +1,38 @@
+# ============================================================
+# Credit Default Risk Prediction System — Dependencies
+# Pinned versions so the project is reproducible on any machine.
+# This is what "industry-grade" means: someone clones your repo
+# in 2 years and it still works.
+# ============================================================
+
+# --- Core data stack ---
+pandas==2.2.3
+numpy==2.1.3
+
+# --- Modeling ---
+scikit-learn==1.5.2
+xgboost==2.1.3
+imbalanced-learn==0.12.4      # SMOTE & class-imbalance tools
+
+# --- Visualization ---
+matplotlib==3.9.2
+seaborn==0.13.2
+
+# --- Notebook environment ---
+jupyter==1.1.1
+notebook==7.2.2
+ipykernel==6.29.5
+
+# --- Model explainability (interview gold for credit risk) ---
+shap==0.46.0
+
+# --- Persistence ---
+joblib==1.4.2
+
+# --- Demo web app ---
+streamlit==1.39.0
+
+# --- Code quality (shows engineering maturity) ---
+black==24.10.0
+ruff==0.7.2
+pytest==8.3.3
