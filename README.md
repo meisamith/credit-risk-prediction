@@ -148,3 +148,14 @@ gunzip -c data/raw/accepted_2007_to_2018Q4.csv.gz > data/raw/loans.csv
 ## License
 
 Educational portfolio project. Dataset subject to its original license.
+
+## 7. Explainability (SHAP)
+
+Credit decisions must be explainable — lenders are legally required to
+state why an applicant was rejected ("adverse action"). A SHAP summary
+(`reports/figures/shap_summary.png`) attributes each prediction to its
+driving features. The top drivers — FICO score, loan amount, DTI, and
+interest rate — move predictions in directions consistent with credit
+intuition (lower FICO pushes toward default). SHAP was used not just for
+reporting but as a **sanity check that the model relies on legitimate
+signal rather than leakage or spurious correlations**.
